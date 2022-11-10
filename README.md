@@ -14,5 +14,3 @@
 		}
 	}
 ```
-
-![image-20221110135143853](/Users/tong/Library/Application Support/typora-user-images/image-20221110135143853.png)
