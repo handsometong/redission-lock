@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.tom</groupId>
+		<artifactId>redission-lock</artifactId>
+		<version>1.0.0</version>
+	</parent>
+	<artifactId>redisson-spring-boot-starter-parent</artifactId>
+	<name>redisson-spring-boot-starter-parent</name>
+	<version>1.0.0</version>
+	<url>http://maven.apache.org</url>
+	<packaging>pom</packaging>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+	<modules>
+		<module>redisson-spring-boot-starter</module>
+		<module>redisson-spring-boot-autoconfigure</module>
+	</modules>
+</project>

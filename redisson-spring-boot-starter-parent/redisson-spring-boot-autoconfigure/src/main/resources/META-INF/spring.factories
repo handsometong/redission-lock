@@ -1,0 +1,4 @@
+# Auto Configure
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.tom.redisson.spring.boot.autoconfigure.RedissonAutoConfiguration,\
+com.tom.redisson.spring.boot.autoconfigure.RedissonCacheConfiguration

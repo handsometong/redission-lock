@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: demo-lock-redisson
+  profiles:
+    active: dev
+

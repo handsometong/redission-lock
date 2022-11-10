@@ -1,0 +1,49 @@
+logging:
+  level:
+    com:
+      itopener: DEBUG
+    org:
+      springframework: INFO
+#server
+server:
+  port: 8080
+spring:
+  redisson:
+    caches:
+      userIdCache:
+        ttl: 10000
+    config:
+#      clusterServersConfig:
+#        idleConnectionTimeout: 10000
+#        nodeAddresses: redis://10.250.20.179:7001,redis://10.250.20.179:7002,redis://10.250.20.179:7003,redis://10.250.20.179:7004,redis://10.250.20.179:7005,redis://10.250.20.179:7006
+#        scanInterval: 2000
+#      codec:
+#        className: org.redisson.codec.KryoCodec
+#      codecProvider:
+#        className: org.redisson.codec.DefaultCodecProvider
+#      keepPubSubOrder: false
+#      lockWatchdogTimeout: 40000
+#      nettyThreads: 5
+#      redissonReferenceEnabled: false
+#      resolverProvider:
+#        className: org.redisson.liveobject.provider.DefaultResolverProvider
+#      threads: 5
+#      useLinuxNativeEpoll: false
+#    config-file:
+#      json: classpath:redisson.json
+      singleServerConfig:
+        idleConnectionTimeout: 10000
+        connectTimeout: 10000
+        timeout: 3000
+        retryAttempts: 3
+        retryInterval: 1500
+        subscriptionsPerConnection: 5
+        address: "redis://127.0.0.1:6379"
+        subscriptionConnectionMinimumIdleSize: 1
+        subscriptionConnectionPoolSize: 50
+        connectionMinimumIdleSize: 32
+        connectionPoolSize: 64
+        database: 0
+        dnsMonitoringInterval: 5000
+      threads: 5
+      nettyThreads: 5
